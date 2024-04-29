@@ -1,0 +1,124 @@
+/* Reset de estilos */
+
+/* Define estilos iniciais para garantir uma base consistente em diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+
+/* Define a aparência geral da página, incluindo a fonte, cores de fundo e texto, e alinhamento do conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(201, 232, 204, 0.702);
+    color: rgb(0, 0, 0);
+    flex-wrap: nowrap;
+}
+
+/* Define as larguras mínima e máxima para essas seções para garantir uma aparência consistente */
+header, main, section {
+    min-width: 641px;
+    max-width: 700px;
+}
+
+/* Estilos para rótulos de formulário, incluindo exibição em bloco, fonte, cor de fundo e padding */
+
+form label {
+    display: inline-block;   
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+/* Estilos do formulário */
+
+/* Define a aparência do formulário */
+
+.calculator {
+    background-color: #fff;/* incluindo cores de fundo, */
+    border-radius: 8px; /*bordas arredondadas*/
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;/* tipo de display */
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas com o mesmo tamanho */
+    grid-auto-rows: auto; /* Altura automática das linhas */
+    gap: 20px; /* Espaçamento entre os itens */
+    text-align: center;
+}
+
+/* Estilos dos campos de entrada */
+
+/* Define a aparência dos campos de entrada de numeros*/
+
+.calculator input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+/* Estilos dos botões */
+
+/* Define a aparência dos botões de operação*/
+
+.calculator input[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Estilos do resultado */
+
+/* Define a aparência do resultado do cálculo */
+.calculator #result {
+    
+    margin-top: 10px;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+/* Estilos do footer container */
+
+/* Define a aparência do contêiner do rodapé das duas paginas*/
+.container {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    position: absolute;    
+    left: 0;    
+    bottom: 0;    
+    width: 100%;
+}
+/* Estilos de aviso */
+
+/* Define a aparência do aviso ,utilizado no aviso de falta de informações dos numeros */
+.warning {
+    margin-top: 10px;
+    background-color: #fff3cd; /* Cor de fundo */
+    border: 1px solid #ffeeba; /* Cor da borda */
+    color: #856404; /* Cor do texto */
+    padding: 18px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    text-align: center;
+}
